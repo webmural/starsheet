@@ -13,31 +13,31 @@
 
 @media (color) {
   :focus {
-    background-color: blueviolet;
-    color: seashell;
+    background-color: turquoise;
+    color: indigo;
   }
 
   ::selection {
-    background: #323;
-    color: #bae;
+    background: gold;
+    color: darkviolet;
   }
 
   :root {
-    background-color: darkviolet;
+    background-image: conic-gradient(darkviolet, blueviolet, darkviolet);
+    background-color: purple;
     color: seashell;
-  }
-}
-
-@media (prefers-contrast: more) {
-  :focus {
-    background-color: turquoise;
-    color: indigo;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    background-color: seashell;
-    color: darkviolet;
+    background-image: conic-gradient(seashell, mistyrose, seashell);
+    background-color: mistyrose;
+    color: purple;
+  }
+
+  ::selection {
+    background: darkviolet;
+    color: peachpuff;
   }
 }
